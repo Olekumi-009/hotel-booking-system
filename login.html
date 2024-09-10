@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+    
+<div class="login">
+    <form name='form-login' id="form">
+
+        <h1>Login</h1>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id= "password" placeholder="Password" required>
+        </div>
+
+        <div id="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                style="display: inline-block;">
+            <label>Remember me</label>
+        </div>
+
+        <input id= "login_btn" type="submit" value="Login">
+        <div id="other">
+            <hr>
+            <p>Don't have an account? <a href=" signup.html">SIGN-UP</a><a href="hostels.html">Guest Mode</a></p>
+        </div>
+    </form>
+    
+</div>
+<script src="index.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+<script src="sign.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HOSTEL FORMS </title>
+   <link rel="stylesheet" type="text/css" href="booking.css">
+</head>
+<body>
+   <div class="images">
+      <!-- <img src="./d.jpg" alt=""> -->
+   </div>
+   <h1>Room  Allocator </h1>
+<p id="showTotalRooms"></p>
+
+<div class="wrapper">
+   <div class="checkRoomAvailForm">
+      <h3>Check if a Room is Available</h3>
+      <label for="checkRoomAvail">Enter Room No.</label>
+      <input id="checkRoomAvail" type="number" max="40" min="1" placeholder="e.g. 1">
+      <!--<br>-->
+      <input id="checkRoomAvailBtn" type="button" value="Check">
+      <!--<br>-->
+      <p id="checkRoomAvailStatus"></p>
+   </div>
+
+   <form class="addOccupantForm">      
+      <h3>Register an Occupant</h3>
+      <label for="addOccupantName">Enter Full Name</label>
+      <input id="addOccupantName" type="text" value="" placeholder="e.g. Ole kumi" required>
+      <!--<br>-->
+      <label for="addOccupantRoomNo">Enter Room No.</label>
+      <input id="addOccupantRoomNo" type="number" value="" placeholder="e.g. 1" required>
+      <!--<br>-->
+      <button id="addOccupantBtn">Add Occupant</button>
+      <!--<br>-->
+      <p id="addOccupantStatus"></p>
+   </form>
+</div>
+
+<div class="backHome">
+   <a href="hostels.html">Back to Home</a>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+<script type="text/javascript" src="booking.js"></script>
+</body>
+</html>

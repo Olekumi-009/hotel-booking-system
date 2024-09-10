@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(hostel.png);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background-position: ; */
+	font-family: "arial";
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#container{
+
+}
+ #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana;
+    color: #fff;
+    text-align: center;
+}
+
+#span{
+    display: block;
+}
+
+
+hr{
+    width: 100%;
+    /* background-color: aquamarine; */
+    border-color: #e15627;
+}
+
+#links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+a{
+    width: 100%;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
+    background-color: #e15627;
+    color: white;
+    border-radius: 10px;
+    transition: 0.3s;
+
+}
+a:hover{
+    
+    background: #282e33;
+    box-shadow: 0 0 5px #dc7f51;
+    
+}
+

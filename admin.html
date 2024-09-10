@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>HOSTEL FORMS </title>
+   <link rel="stylesheet" type="text/css" href="booking.css">
+</head>
+<body>
+   <div class="images">
+      <!-- <img src="./d.jpg" alt=""> -->
+   </div>
+   <h1>Room  Allocator </h1>
+<p id="showTotalRooms"></p>
+
+<div class="wrapper">
+   <div class="checkRoomAvailForm">
+      <h3>Check if a Room is Available</h3>
+      <label for="checkRoomAvail">Enter Room No.</label>
+      <input id="checkRoomAvail" type="number" value="" placeholder="e.g. 1">
+      <!--<br>-->
+      <input id="checkRoomAvailBtn" type="button" value="Check">
+      <!--<br>-->
+      <p id="checkRoomAvailStatus"></p>
+   </div>
+
+   <form class="addOccupantForm">
+      <h3>Register an Occupant</h3>
+      <label for="addOccupantName">Enter Full Name</label>
+      <input id="addOccupantName" type="text" value="" placeholder="e.g. Ole kumi" required>
+      <!--<br>-->
+      <label for="addOccupantRoomNo">Enter Room No.</label>
+      <input id="addOccupantRoomNo" type="number" value="" placeholder="e.g. 1" required>
+      <!--<br>-->
+      <button id="addOccupantBtn">Add Occupant</button>
+      <p id="addOccupantStatus"></p>
+   </form>
+
+   <div class="clearRoomForm">
+      <h3>Clear Room</h3>
+      <label for="clearRoomNo">Enter Room No.</label>
+      <input id="clearRoomNo" type="number" value="" placeholder="e.g. 1">
+      <!--<br>-->
+      <input id="clearRoomBtn" type="button" value="Clear">
+      <!--<br>-->
+      <p id="clearRoomStatus"></p>
+   </div>
+
+   <div class="searchOccupantForm">
+      <h3>Check who is staying in which Room</h3>
+      <label for="searchOccupant">Enter Room No. or Occupant's Full Name</label>
+      <input id="searchOccupant" type="text" value="" placeholder="e.g. 1 or Ole kumi">
+      <!--<br>-->
+      <input id="searchOccupantBtn" type="button" value="Search">
+      <!--<br>-->
+      <p id="searchOccupantStatus"></p>
+   </div>
+</div>
+
+<div class="record">
+   <h3>
+      <span>Record </span>
+      <input id="clearAllBtn" type="button" value="Clear All">
+   </h3>
+   <div id="recordList">
+   </div>
+</div>
+<button id="ole"><a href="index.html">Back to Home
+</button></a>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+<script type="text/javascript" src="admin.js"></script>
+</body>
+</html>
